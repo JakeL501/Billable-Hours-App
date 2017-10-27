@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <!-- first Section -->
+        <div class="row">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-10" id="header">
+                <div class="jumbotron">
+                    <h1>Employee Data Management</h1>
+                    <h3>A Comprehensive Directory of Employee Billable Hours </h3>
+                </div>
+
+
+            </div>
+
+            <div class="col-md-1"></div>
+        </div>
+
+        <!-- space row -->
+        <div class="row">
+            <div class="col-md-12"></div>
+        </div>
+
+        <!-- second section / Current Employee Display -->
+
+        <div class="col-md-1"></div>
+
+        <div class="col-md-10" id="current-employee-table">
+            <table class="table table-bordered" id="current-employees">
+                <tr>
+                    <h4>
+                        Current Employees
+
+                    </h4>
+                </tr>
+
+                <!-- <div class="col-md-1"></div> -->
+
+                <!-- Current Employees Table -->
+
+                <tr id="section-titles">
+                    <div class="col-md-1"></div>
+
+                    <td id="employee-name">
+                        <p>Employee Name
+                        </p>
+                    </td>
+                    <td id="employee-role">
+                        <p>Role
+                        </p>
+                    </td>
+                    <td id="employee-startdate">
+                        <p>Start Date
+                        </p>
+                    </td>
+                    <td id="employee-monthsworked">
+                        <p>Months Worked
+                        </p>
+                    </td>
+                    <td id="employee-monthlyrate">
+                        <p>Monthly Rate ($)
+                        </p>
+                    </td>
+                    <td id="employee-totalbilled">
+                        <p>Total Billed ($)
+                        </p>
+                    </td>
+
+                </tr>
+
+                <!-- <div class="col-md-1"></div> -->
+
+                <tr id="add-current-employee">
+                    <td id="current-employee-row">
+                        <p id="employeeName-display"></p>
+                    </td>
+                    <td id="current-employee-role">
+                        <p id="role-display"></p>
+                    </td>
+                    <td id="current-employee-startdate">
+                        <p id="date-display"></p>
+                    </td>
+                    <td id="current-employee-monthsworked">
+                        <p id="monthsWorked-display"></p>
+                    </td>
+                    <td id="current-employee-monthlyrate">
+                        <p id="monthlyRate-display"></p>
+                    </td>
+                    <td id="current-employee-totalbilled">
+                        <p id="totalBilled-display"></p>
+                    </td>
+            </table>
+        </div>
+
+
+        <!-- space row -->
+        <div class="row">
+            <div class="col-md-12"></div>
+        </div>
+
+
+
+        <!-- third section / Add Employee Display -->
+        <div class="row">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-10" id="add-employee">
+                <h4>Add Employee</h4>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <!-- Add Employee : Name -->
+
+        <div class="row">
+                <div class="col-md-1"></div>
+
+                <div class="col-md-10" id="add-name">
+                    <p>Employee Name
+                    </p>
+                </div>
+                <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-10" id="input-name">
+                <input type="text" class="form-control" placeholder="First Last" id="employee-input">
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <!-- Add Employee : Role -->
+        <div class="row">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-10" id="add-roll">
+                <p>Role
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-10" id="input-roll">
+                <input type="text" class="form-control" placeholder="Role" id="role-input">
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <!-- Add Employee : Start Date -->
+        <div class="row">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-10" id="add-date">
+                <p>Start Date (DD/MM/YY - ex: 01/01/89)
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-10" id="input-date">
+                <input type="text" class="form-control" placeholder="DD/MM/YY" id="date-input">
+
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <!-- Add Employee : Monthly Rate -->
+        <div class="row">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-10" id="add-monthlyRate">
+                <p>Monthly Rate
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-10" id="input-monthlyRate">
+                <input type="text" class="form-control" placeholder="Monthly Rate" id="monthlyRate-input">
+
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <!-- Add Employee : Button Submit -->
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <button type="button" class="btn btn-primary"> Submit </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Space Row -->
+    <div class="row">
+        <div class="col-md-10"></div>
+    </div>
+
+    <!-- second row -->
+
+
+
+
+
+
+    </div>
+    <!-- javascript - game script  -->
+    <script src="assets/EmployeeDataManagement.js"></script>
+</body>
+
+</html>
